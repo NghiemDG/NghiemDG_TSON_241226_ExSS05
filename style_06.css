@@ -1,0 +1,70 @@
+body {
+  font-family: "Delius", "Roboto";
+}
+div {
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  background-color: gray;
+  margin: 50px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 30px;
+}
+.fadein {
+  background-color: gray;
+  transition: 0.5s;
+}
+.fadein:hover {
+  background-color: rgb(207, 207, 207);
+  transition: 0.5s;
+}
+.changecolor {
+  background-color: gray;
+  transition: 0.2s;
+}
+.changecolor:hover {
+  background-color: aqua;
+  transition: 0.2ms;
+}
+.shrink {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.shrink:hover {
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+.grow {
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+.grow:hover {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.rotate {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+.rotate:hover {
+  transform: rotate(-30deg);
+  transition: 0.2s;
+}
+.stoc {
+  border-radius: 0%;
+  transition: 0.3s;
+}
+.stoc:hover {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.border {
+  box-sizing: border-box;
+  border: 0 solid gray;
+  transition: 0.5s;
+}
+.border:hover {
+  border: 15px solid blue;
+  transition: 0.5s;
+}

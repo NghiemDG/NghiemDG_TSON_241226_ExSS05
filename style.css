@@ -1,0 +1,59 @@
+/* div {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  margin: 10px;
+  border: 10px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  /* display: inline; */
+
+/* các thuộc tính width, height, border, margin, padding */
+.inline-element {
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  color: whitesmoke;
+  border: 5px solid greenyellow;
+  padding: 30px;
+  margin: 30px;
+  display: inline-block;
+  /* display: block; */
+}
+/* opacity và kênh màu alpha */
+h1 {
+  background-color: rgba(209, 123, 10, 1);
+  opacity: 0.1;
+}
+div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid green;
+  margin: 0 10px;
+}
+.relative {
+  background-color: aqua;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid green;
+  margin: 0 10px;
+  position: relative;
+  top: 150px;
+  left: 150px;
+}
+.absolute {
+  background-color: red;
+  position: absolute;
+}
+.middle {
+  background-color: yellow;
+  position: relative;
+}
+.fixed {
+  background-color: violet;
+  position: fixed;
+  top: 100px;
+  left: 400px;
+}

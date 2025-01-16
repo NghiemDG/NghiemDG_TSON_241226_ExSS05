@@ -1,0 +1,68 @@
+.transition {
+  background-color: black;
+  color: pink;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  transition: border-radius 4s 2s, background-color 2s, text 1s;
+}
+.transition:hover {
+  border-radius: 50%;
+  background-color: pink;
+  color: black;
+}
+.child {
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border: 5px solid darkgreen;
+  margin-bottom: 30px;
+}
+
+.parent {
+  margin-top: 30px;
+  background-color: aqua;
+}
+.parent:hover .child {
+  margin-left: 300px;
+  transition: 3s;
+}
+.parent:nth-child(1) {
+  transition-timing-function: ease;
+}
+.parent:nth-child(2) {
+  transition-timing-function: ease-in;
+}
+.parent:nth-child(3) {
+  transition-timing-function: ease-in-out;
+}
+.parent:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+.transform-element {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  border: 5px solid black;
+  margin: 10px auto;
+}
+.transform-element:nth-of-type(1) {
+  background-color: orange;
+  transform: rotate(30deg);
+  transform-origin: left;
+}
+.transform-element:nth-of-type(2) {
+  background-color: violet;
+  transform: scale(0.5);
+}
+.transform-element:nth-of-type(3) {
+  background-color: green;
+  transform: translate(300px, 100px);
+}
+.transform-element:nth-of-type(4) {
+  background-color: red;
+  transform: skew(0);
+}
