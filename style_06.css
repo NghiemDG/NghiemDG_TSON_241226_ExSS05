@@ -61,6 +61,8 @@ div {
 }
 .border {
   box-sizing: border-box;
+  width: 150px;
+  height: 90px;
   border: 0 solid gray;
   transition: 0.5s;
 }

@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baitap_SS05_07_2</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         position: relative;
       }
-      .layer1 {
-        box-sizing: border-box;
-        border: 100px solid black;
-        border-radius: 50px;
+      h1 {
+        font-size: 40px;
+        color: aliceblue;
         position: absolute;
+        display: inline;
+        top: 500px;
+        left: 0;
+      }
+      h1 > span {
+        font-size: 20px;
+        opacity: 0.7;
+      }
+      .layer1 {
+        opacity: inherit;
+        position: absolute;
+        border: inset;
+        border-color: rgba(13, 255, 255, 0.1);
+        border-width: 180px 200px 140px 460px;
+        box-sizing: border-box;
         top: 0;
         width: 1024px;
         height: 684px;
@@ -21,10 +40,42 @@
       .layer2 {
         opacity: inherit;
         position: absolute;
+        border: inset;
+        border-color: rgba(13, 255, 255, 0.1);
+        border-width: 140px 360px 180px 300px;
+        box-sizing: border-box;
         top: 0;
         width: 1024px;
         height: 684px;
         background-color: rgba(21, 80, 77, 0.3);
+      }
+      .object {
+        position: absolute;
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+        height: 70px;
+        width: 200px;
+        top: 60px;
+        left: 100px;
+        font-size: 25px;
+      }
+      .object.object2 {
+        left: 800px;
+        top: 300px;
+        width: 70px;
+      }
+      .object.object2.object3 {
+        left: 800px;
+        top: 400px;
+        width: 70px;
+      }
+      #around {
+        top: 0;
+        position: absolute;
+        width: 1024px;
+        height: 684px;
+        border: 150px inset rgba(9, 21, 22, 0.8);
       }
     </style>
   </head>
@@ -33,14 +84,17 @@
       src="https://media.istockphoto.com/id/656670442/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E6%95%B4%E5%82%99%E5%A3%AB%E3%81%AE%E8%87%AA%E5%8B%95%E8%BB%8A%E4%BF%AE%E7%90%86%E5%BA%97%E3%81%A7%E7%A0%B4%E6%90%8D%E3%81%97%E3%81%9F%E8%BB%8A%E3%82%92%E4%BF%AE%E7%90%86.jpg?s=1024x1024&w=is&k=20&c=WFaJzeGAlSCoD8gKe_s_6Zf_wBEag1VisUmFvAYlFNs="
       alt=""
     />
-    <div class="layer1">
-      <pre>
-        <h1>
-            Car repairing Tracking
-            All platfrom
-        </h1>
-         </pre>
-    </div>
+    <div id="around"></div>
+    <div class="layer1"></div>
     <div class="layer2"></div>
+    <pre>
+      <h1>
+          Car Repairing Tracking
+          <span>All platfrom</span>
+      </h1>
+       </pre>
+    <p class="object">AUTOMOTIVE</p>
+    <p class="object object2">A</p>
+    <p class="object object2 object3">B</p>
   </body>
 </html>
